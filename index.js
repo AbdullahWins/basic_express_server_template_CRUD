@@ -73,7 +73,7 @@ const run = async () => {
 run().catch((error) => console.log(error));
 
 //base url response
-app.get("/", (res) => {
+app.get("/", (req, res) => {
   res.send("Simple CRUD Template");
 });
 
